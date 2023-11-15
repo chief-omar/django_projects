@@ -12,3 +12,12 @@ def getFood(request):
     food = Food.objects.all()
     serializer = FoodSerializer(food, many=True)
     return Response(serializer.data)
+
+@api_view(['POST'])
+def postFood(request):
+    """POST Food to the api."""
+
+    serializer = FoodSerializer(data=request.data)
+    if serializer.is_valid():
+        serializer.save()
+    return Response(serializer.data)

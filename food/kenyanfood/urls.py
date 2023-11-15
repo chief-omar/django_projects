@@ -5,5 +5,5 @@ from django.conf import settings
 
 urlpatterns = [
     path('', views.getFood),
-    # path('post/', views.postFood)
+    path('post/', views.postFood)
 ] 
