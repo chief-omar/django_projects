@@ -1,3 +1,3 @@
 # Django Projects: Test Area
 
-A repo dedicated to testing djanog projects with the CodeQl
+A repo dedicated to testing django projects with the CodeQl
